@@ -18,10 +18,6 @@ public class TokenService {
     }
 
     public boolean validateToken(String token) {
-        if (tokenList.contains(token)) {
-            return true;
-        } else {
-            return false;
-        }
+        return tokenList.contains(token);
     }
 }
